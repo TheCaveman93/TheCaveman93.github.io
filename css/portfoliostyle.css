@@ -45,6 +45,7 @@ div.desc {
 }
 
  figure img {
+    position: absolute;
 	opacity: 1;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
@@ -194,6 +195,7 @@ nav.fill ul li a:hover:after {
 }
 
 img {
+position: absolute;
    display: block;
     margin-left: auto;
     margin-right: auto 
