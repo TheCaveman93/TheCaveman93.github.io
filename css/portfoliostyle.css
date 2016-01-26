@@ -3,7 +3,6 @@
     #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}  
 }
-
 /* Tabled Portrait */
 @media screen and (max-width: 768px) {
     #primary { width:100%; }
@@ -14,7 +13,6 @@
         content: attr(data-src-600px, url);
     }
 }
-
 @media (min-device-width:800px) {
     img[data-src-800px] {
         content: attr(data-src-800px, url);
@@ -208,6 +206,7 @@ nav.fill ul li a:hover:after {
 }
 
 img {
+	max-width: 100%; 
    display: block;
     margin-left: auto;
     margin-right: auto 
