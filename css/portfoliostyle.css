@@ -7,6 +7,25 @@
 @media screen and (max-width: 768px) {
     #primary { width:100%; }
     #secondary { width:100%; margin:0; border:none; }
+    @media screen and (max-width: 44em) {
+  nav[role="select"] {
+    ul {
+      display: none;
+    }
+
+    select {
+      display: block;
+      width: 100%;
+    }
+
+    &:after {
+      position: absolute;
+      content: "Menu";
+      right: 0;
+      bottom: -1em;
+    }
+  }
+}
 }
 
 body {
