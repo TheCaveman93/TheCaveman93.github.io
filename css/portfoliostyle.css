@@ -101,7 +101,7 @@ section {
 }
 }
 .text{
-width: 500px;
+  max-width: 500px;
 }
 .container {
 width: 100%;
