@@ -1,4 +1,7 @@
-/* Tablet Landscape */
+
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+ 
+ /* Tablet Landscape */
 @media screen and (max-width: 1060px) {
     #primary { width:67%; }
     #secondary { width:30%; margin-left:0%;}  
@@ -8,6 +11,7 @@
     #primary { width:100%; }
     #secondary { width:100%; margin:0; border:none; }
     @media screen and (max-width: 44em) {
+   
   nav[role="select"] {
     ul {
       display: none;
@@ -30,7 +34,7 @@
 
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   padding: 0;
   margin: 0;
 }
