@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter|Patua+One|Play);
+html, body {
+background-color: #fff;
+   width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+.mainimage{
+position: static;
+ top: 0px; 
+ left: 0px;
+  z-index: 1;
+  }
+.buttonimg{
+position:absolute; 
+top: 485px; 
+left: 50px; 
+right: 50px;
+z-index: 3;
+margin: auto;
+ width: 15%;
+}
+.headings {
+font-family: 'Play', sans-serif;
+color: #8e44ad;
+font-size: 25px;
+}
+.header2 {
+font-family: 'Play', sans-serif;
+padding: 25px;
+margin-top: 100px;
+color: #8e44ad;
+font-size: 30px;
+
+}
+.projects {
+background-color: #fff;
+}
+.contactme {
+    background:#452d51;
+    border-radius:2px;
+    padding:20px;
+    }
+    
+.para {
+font-family: 'Play', sans-serif;
+padding: 5px;
+margin-top: 20px;
+color: #8e44ad;
+font-size: 20px;
+
+}
+.subs {
+color: #8e44ad
+}
+.button {
+ top: 120px;
+display: inline-block;
+left: 70px;
+text-align: center;
+width: 190px;
+ height: 190px;  
+}
+.h2purple{
+color:#452d51;
+left: 200px;
+}
+
+.img            { 
+position: relative;
+ margin-bottom: 20px;
+ width: 100%; }
+ h1 {
+ font-size: 30px;
+ }
+h2                  { 
+position: absolute;
+ top: 200px; left: 0; 
+  }
+h2 span             { 
+color: white; 
+font: bold 24px/45px Helvetica, Sans-Serif; 
+letter-spacing: -1px;  
+background: rgb(0, 0, 0);
+ background: rgba(0, 0, 0, 0.7); }
+h2 span.spacer   { 
+padding: 0 2px; 
+background: none; }
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #452d51;
+}
+.bar {
+font-family: 'Play', sans-serif;
+ margin: 0 auto;
+    text-align: left;
+    width: 80%;
+  }
+  .aboutme {
+  height: 400px;
+  width: 100%;
+  background-color: #452d51;
+  }
+  
+.footer {
+  position: static;  
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  color: white;
+  background-color: #452d51;
+  text-align: center;
+  
+}
+            
+/* The element at the top of the page right after the fixed navigation bar
+   MUST have sufficient top margin or else it will be covered by the bar */
+.content {
+  margin-top: 20px;
+}
+
+/* Example responsive navigation menu  */
+.fixed-nav-bar li, .fixed-nav-bar a { 
+  height: 50px;
+  line-height: 50px;
+}
+.menu {
+font-family: 'Play', sans-serif;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.menu a, .menu a:visited {
+  color: #8e44ad;
+}
+.menu a:hover, .menu a:target {
+  color: white;
+}
+.menu-items {
+  display: inline-block;
+}
+.sitename {
+font-family: 'Play', sans-serif;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+a.sitename, a:visited.sitename {
+  color: #8e44ad;
+}
+.menu-items li {
+font-family: 'Play', sans-serif;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.menu-items a {
+  text-decoration: none;
+}
+.show, .hide {
+  display: none;
+  padding-left: 15px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center left;
+  color: #8e44ad;
+}
+@media only screen and (max-width: 800px) {
+  .menu { 
+    position: relative;
+    width: 100%;
+  }
+  .sitename {
+ font-family: 'Play', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    margin-left: 0px;
+  }
+  .menu-items { 
+    width: 100%;
+    margin-top: 50px;
+    background-color: #452d51;!important
+  }
+  .menu-items li {
+  font-family: 'Play', sans-serif;
+
+    text-align: center;
+  }
+  .show, .hide {  
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+  .show {
+    display: inline-block;
+  }
+  .hide {
+    display: none;
+  }
+  #menu:target .show {
+   
+  }
+  #menu:target .hide, #menu:target .menu-items {
+    
+  }
+}
+
+@media only screen and (max-width: 220px) {
+  .sitename, .show, .hide {
+    font-size: 14px;
+
+.project {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-width: 200px; /* Chrome, Safari, Opera */
+    -moz-column-width: 100px; /* Firefox */
+    column-width: 100px;
+}
+.design {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-width: 200px; /* Chrome, Safari, Opera */
+    -moz-column-width: 100px; /* Firefox */
+    column-width: 100px;
+}
+  
+  
+  
