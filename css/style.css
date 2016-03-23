@@ -111,7 +111,6 @@ font-family: 'Play', sans-serif;
   }
   
 .footer {
-height: 200px;
   position: static;  
   right: 0;
   bottom: 0;
@@ -120,7 +119,7 @@ height: 200px;
   color: white;
   background-color: #452d51;
   text-align: center;
-  
+  height: 200px;
 }
             
 /* The element at the top of the page right after the fixed navigation bar
