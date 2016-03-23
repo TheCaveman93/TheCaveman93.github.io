@@ -111,7 +111,7 @@ font-family: 'Play', sans-serif;
   }
   
 .footer {
-border-radius: 20px;
+height: 200px;
   position: static;  
   right: 0;
   bottom: 0;
