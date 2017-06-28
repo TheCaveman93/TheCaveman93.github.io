@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Furdos</title>
+  
+  
+
+      <link rel="stylesheet" href="include/ui-1.10.0/ui-lightness/jquery-ui-1.10.0.custom.min.css" type="text/css" />
+      <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    
+
+
+
+
+
+
+
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
+<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css'>
+   <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+     
+   
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <script>
+ $(document).ready(function(){
+$("#datepicker").datepicker({
+
+  beforeShowDay: function(date)
+  {
+
+    var day = date.getDay();
+    if(day==0 || day==6)
+    {
+      return [false];
+    }
+    else
+            return [true];
+  }});
+ });
+</script>
+
+  <script type="text/javascript">
+$(document).ready(function(){
+    var $name=/^([a-zA-Z]{3,16})$/;
+    $('.name').on('keypress keydown keyup',function(){
+             if (!$(this).val().match($name)) {
+              // there is a mismatch, hence show the error message
+                 $('.emsg').removeClass('hidden');
+                 $('.emsg').show();
+             }
+           else{
+                // else, do not display message
+                $('.emsg').addClass('hidden');
+               }
+         });
+});
+</script>
+
+</head>
+
+<body>
+          
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Furdos</a>
+    </div>
+
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a><span class="hover"></span></li>
+      <li><a href="booking.html">Booking</a><span class="hover"></span></li>
+      <li><a href="Contact.html">Contact</a><span class="hover"></span></li>
+      <li><a href="index.php">Admin Login</a><span class="hover"></span></li>
+      
+    </ul>
+  </div>
+  </div>
+</nav>
+   
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+    <!-- Navigation 
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+             Brand and toggle get grouped for better mobile display
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+            </div>
+            Collect the nav links, forms, and other content for toggling 
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="login.html">About</a>
+                    </li>
+                    <li>
+                        <a href="login.html">About</a>
+                    </li>
+                    <li>
+                        <a href="login.html">About</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            </.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Book Here
+                    <small>Treatments Available</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="dogimages/dog5.png" alt="">
+                </a>
+                <h3>
+                    <a href="#">Bath and a brush £15</a>
+                </h3>
+                <p>Offering a bath and brush for your dog all week Monday to Saturday at £15.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="dogimages/dog8.jpeg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Puppy Groom £15</a>
+                </h3>
+                <p> Brillaint way to introudcue your pup to grooming, it is suitable for pups aged 3-6 months </p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="dogimages/dog4.png" alt="">
+                </a>
+                <h3>
+                    <a href="#">Ears and Nails £10</a>
+                </h3>
+                <p>This treatment will allow your dog to have clean ears and heathly nails</p>
+            </div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="dogimages/dog6.png" alt="">
+                </a>
+                <h3>
+                    <a href="#">Full Groom(Small Dog) £25</a>
+                </h3>
+                <p>Offer includes ears getting cleaned, nials and hair clipped as well as a bath.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="dogimages/dog3.png" alt="">
+                </a>
+                <h3>
+                    <a href="#">Full Groom(Medium Sized Dog</a>
+                </h3>
+                <p>Offer includes ears getting cleaned, nials and hair clipped as well as a bath.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="dogimages/dog1.jpeg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Full Groom(Large Dog) £45</a>
+                </h3>
+                <p>Offer includes ears getting cleaned, nials and hair clipped as well as a bath.</p>
+            </div>
+        </div>
+
+         
+     
+
+  <div class="container">
+
+    <form class="well form-horizontal" action="insert.php " method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Book with us!</legend>
+
+<!-- Text input-->
+
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Date</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+
+  <input   id="datepicker" class="form-control" type="text" name="Date" placeholder="DD/MM/YY" tabindex="7" >
+ 
+    </div>
+  </div>
+</div>
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Select Time</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="Time"class="form-control selectpicker" >
+      <option value=" "   name="Time" required>Please select your booking time</option>
+      <option name="Time" >9AM</option>
+      <option name"Time">10AM</option>
+      <option name"Time">11AM</option>
+      <option name"Time">12PM</option>
+      <option name"Time">13PM </option>
+      <option name"Time">14PM</option>
+      <option name"Time">15PM</option>
+      <option name"Time">16PM</option>
+      
+    </select>
+  </div>
+</div>
+</div>
+
+<!-- Select Basic 
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Time</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="Time" class="form-control selectpicker" >
+      <option value=" " >Please select your Time</option>
+      <option>9AM</option>
+      <option>10Am</option>
+      <option>11AM</option>
+      <option>12PM</option>
+      <option>13PM</option>
+      <option>14PM</option>
+      <option>15Pm</option>
+      <option>16PM</option>
+    </select>
+  </div>
+</div> 
+</div> -->
+
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Select Treatment</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="Selectedtreatment" class="form-control selectpicker" >
+      <option value=" " required>Please select your treatment</option>
+      
+      <option name"Selectedtreatment">Bath and a Brush (£15)</option>
+      <option name"Selectedtreatment">Puppy Groom (£15)</option>
+      <option name"Selectedtreatment">Ears and Nails (£10)</option>
+      <option name"Selectedtreatment">Full Groom (Small Dog £25) </option>
+      <option name"Selectedtreatment">Full Groom (Medium Dog £35)</option>
+      <option name"Selectedtreatment">Full Groom (Large Dog £45)</option>
+      
+    </select>
+  </div>
+</div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label">Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="Name" placeholder="Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="Email" placeholder="E-Mail Address" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Phone #</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="Phone" placeholder="+447872-121212" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+      
+
+
+<!-- Text input-->
+ 
+
+<!-- Select Basic -->
+
+   
+
+
+
+<!--
+  
+<div class="form-group">
+  <label class="col-md-4 control-label">Project Description</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+          <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+  </div>
+  </div>
+</div>
+-->
+<!-- Success message
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+-->
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+  </form>
+  </div>
+</div>
+</div>
+
+
+         <!--Pagination-->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Booking</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin Login</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+
+    </div>
+
+
+
+</fieldset>
+</form>
+</div>
+    </div>
+
+
+    
+<script  language="Javascript" type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script language="Javascript" type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script  language="Javascript" type="text/javascript" src="js/myscript.js"> </script>
+
+<!--
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>-->
+<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+<script src="js/validation.js"></script>
+<script src="js/index.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--
+<form action="insert.php" method="post">
+<div class="form-group">
+    <label for="exampleInputPassword1">Enter Date</label>
+    
+   
+  </div>
+   <div class="form-group">
+    <label for="exampleSelect1">Select Time</label>
+    <select class="form-control" name='Time' id="exampleSelect1">
+      <option name='Time'>9AM</option>
+      <option name='Time'>10AM</option>
+      <option name='Time'>11AM</option>
+      <option name='Time'>12PM</option>
+      <option name='Time'>13PM</option>
+      <option name='Time'>14PM</option>
+      <option name='Time'>15PM</option>
+      <option name='Time'>16PM</option>
+      <option name='Time'>17PM</option>
+
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect2">Select Treatment</label>
+    <select multiple class="form-control" name='Selectedtreatment' id="exampleSelect2">
+      <option name='Selectedtreatment'>1</option>
+      <option name='Selectedtreatment'>2</option>
+      <option name='Selectedtreatment'>3</option>
+      <option name='Selectedtreatment'>4</option>
+      <option name='Selectedtreatment'>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Name</label>
+    <input placeholder="Enter Name" name='Name' type="text" tabindex="4" class="form-control" id="exampleInputPassword1"required>
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Email</label>
+    <input placeholder="Enter Email" name='Email' type="email" tabindex="4"  class="form-control" id="exampleInputPassword1"required>
+    
+  </div>
+  
+  
+  <div class="form-group">
+    <label for="exampleInputEmail1">Phone</label>
+    <input placeholder="Enter Telephone" name='Phone' type="text" tabindex="4" class="form-control" id="exampleInputEmail1" required>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  
+ 
+  
+  <div class="form-group">
+    <label for="exampleTextarea">Enter Message</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+  </div>
+  <fieldset class="form-group">
+    <legend>Radio buttons</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Option one is this and that&mdash;be sure to include why it's great
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+        Option two can be something else and selecting it will deselect option one
+      </label>
+    </div>
+    <div class="form-check disabled">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+        Option three is disabled
+      </label>
+    </div>
+  </fieldset>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Check me out
+    </label>
+  </div>
+  <button name='submit'type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>-->

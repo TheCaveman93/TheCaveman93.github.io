@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Animated Nav!!!!!!!!!!!!!</title>
+  
+  
+
+      <link rel="stylesheet" href="include/ui-1.10.0/ui-lightness/jquery-ui-1.10.0.custom.min.css" type="text/css" />
+      <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/3-col-portfolio.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <script>
+ $(document).ready(function(){
+$("#datepicker").datepicker({
+
+  beforeShowDay: function(date)
+  {
+
+    var day = date.getDay();
+    if(day==0 || day==6)
+    {
+      return [false];
+    }
+    else
+            return [true];
+  }});
+ });
+</script>
+
+  <script type="text/javascript">
+$(document).ready(function(){
+    var $name=/^([a-zA-Z]{3,16})$/;
+    $('.name').on('keypress keydown keyup',function(){
+             if (!$(this).val().match($name)) {
+              // there is a mismatch, hence show the error message
+                 $('.emsg').removeClass('hidden');
+                 $('.emsg').show();
+             }
+           else{
+                // else, do not display message
+                $('.emsg').addClass('hidden');
+               }
+         });
+});
+</script>
+
+</head>
+
+<body>
+          
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Furdos</a>
+    </div>
+
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a><span class="hover"></span></li>
+      <li><a href="booking.html">Booking</a><span class="hover"></span></li>
+      <li><a href="Contact.html">Contact</a><span class="hover"></span></li>
+      <li><a href="index.php">Admin Login</a><span class="hover"></span></li>
+      
+
+    </ul>
+  </div>
+  </div>
+</nav>
+   
+
+    
+        </div>
+        <!-- /.container -->
+    </nav>
+
+      
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" action="insert2.php" method="post">
+                    <fieldset>
+                        <legend class="text-center header">Contact us</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="name" name="Name" type="text" placeholder="First Name" class="form-control" required>
+                            </div>
+                        </div>
+                       
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="email" name="Email" type="text" placeholder="Email Address" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="Phone" type="text" placeholder="Phone" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="Message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+ 
+
+
+</div>
+         <!--Pagination-->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Booking</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin Login</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+
+    </div>
+
+
+
+
+    
+   
+    
+
+  
+
+
+ 
+
+
+<script src="js/index.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script  language="Javascript" type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script language="Javascript" type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script  language="Javascript" type="text/javascript" src="js/myscript.js"> </script>
+ 
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--
+ 
+-->

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Furdos</title>
+  
+  
+
+      <link rel="stylesheet" href="include/ui-1.10.0/ui-lightness/jquery-ui-1.10.0.custom.min.css" type="text/css" />
+      <link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+     <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/about.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/3-col-portfolio.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+     
+     <style> #map {
+        height: 200px;
+         margin: auto;
+    width: 50%;
+       }
+   </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+ <script>
+ $(document).ready(function(){
+$("#datepicker").datepicker({
+
+  beforeShowDay: function(date)
+  {
+
+    var day = date.getDay();
+    if(day==0 || day==6)
+    {
+      return [false];
+    }
+    else
+            return [true];
+  }});
+ });
+</script>
+
+  <script type="text/javascript">
+$(document).ready(function(){
+    var $name=/^([a-zA-Z]{3,16})$/;
+    $('.name').on('keypress keydown keyup',function(){
+             if (!$(this).val().match($name)) {
+              // there is a mismatch, hence show the error message
+                 $('.emsg').removeClass('hidden');
+                 $('.emsg').show();
+             }
+           else{
+                // else, do not display message
+                $('.emsg').addClass('hidden');
+               }
+         });
+});
+</script>
+
+</head>
+
+<body>
+          
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Furdos</a>
+    </div>
+
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li><a href="booking.html">Booking</a><span class="hover"></span></li>
+      <li><a href="Contact.html">Contact</a><span class="hover"></span></li>
+      <li><a href="index.php">Admin Login</a><span class="hover"></span></li>
+     
+
+    </ul>
+  </nav>
+  </div>
+  </div>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="dogimages/dog16.png" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Welcome to Furdos.</h1>
+              <p>Feel free to book your dog in for our selected treatments.</p>
+              <p><a class="btn btn-lg btn-primary" href="booking.html" role="button">Book Today</a></p>
+            </div>
+            </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="dogimages/dog4.png" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Opening Tims</h1>
+              <p> Monday - Saturday 9-5</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="item"> 
+          <img class="third-slide" src="dogimages/dog5.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Got a question? </h1>
+              <p>Feel free to contact us from our contact page.</p>
+             <p><a class="btn btn-lg btn-primary" href="booking.html" role="button">Contact Us</a></p
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+    
+
+
+
+
+
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Welcome
+                    <small></small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+      
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="dogimages/dog.png" alt="">
+                </a>
+                <h3>
+                    <a href="#">Who we are?</a>
+                </h3>
+                <p>Family owned business offering multiple Dog Grooming treatments in the local Belfast area.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="dogimages/dog6.png" alt="">
+                </a>
+                <h3>
+                    <a href="#"> Do we take all Dogs?</a>
+                </h3>
+                <p>Yes we do, all shapes and sizes.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="dogimages/dog3.png" alt="">
+                </a>
+                <h3>
+                    <a href="#">Can you book online?</a>
+                </h3>
+                <p>Of course, there will be no payment option available as you will have to pay upton arrival.</p>
+            </div>
+        </div>
+        
+
+   <div id="mapdiv" height="50px">
+   <div class="col-md-4 portfolio-item">
+
+           <h1 class="page-header">Where we are</h1>
+           <p> 92 North Queen Street</p>
+           <p> Belfast </p>
+           <p> BT151ES </p>
+           <p> Email: Furdos@gmail.com</p>
+           <p> Phone: 0978695321 </p>
+    </div>
+<div id="map">
+  
+  </div>
+  </div>
+          
+        
+
+
+
+
+
+
+
+<h1 class="page-header">Newsletter Sign Up</h1>
+<form action="insert3.php" method="post">
+<div class="form-group">
+    <label for="exampleInputPassword1">Name</label>
+    <input placeholder="Enter Name" name='Name' type="text" tabindex="4" class="form-control" required>
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Email</label>
+    <input placeholder="Enter Email" name='Email' type="email" tabindex="4"  class="form-control" required>
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Phone</label>
+    <input placeholder="Enter Telephone" name='Phone' type="text" tabindex="4" class="form-control" id="exampleInputEmail1" required>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  
+  <button name='submit'type="submit" class="btn btn-primary">Submit</button>
+</form>
+ 
+
+  
+    <script>
+      function initMap() {
+        var uluru = {lat: 54.610588, lng: -5.927799};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+
+
+
+    
+</div>
+         
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="booking.html">Booking</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="index.php">Admin Login</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                   
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW9r8a1rYpvo169UjQKSHvYAjId5IgNT4&callback=initMap"
+  type="text/javascript"></script>
+<script  language="Javascript" type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script language="Javascript" type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script  language="Javascript" type="text/javascript" src="js/myscript.js"> </script>
+
+<script src="js/carousel.js"></script>
+<script src="js/index.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--
+        <label for="timepicker_7">Time picker with restricted (disabled) hours / minutes. 8:30 PM to 6:30 AM disabled :</label>
+        <input type="text" style="width: 70px" id="timepicker_7" value="01:30 PM" />
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#timepicker_7').timepicker({
+                    showPeriod: true,
+                    onHourShow: timepicker7OnHourShowCallback,
+                    onMinuteShow: timepicker7OnMinuteShowCallback
+                });
+            });
+            function timepicker7OnHourShowCallback(hour) {
+                if ((hour > 20) || (hour < 6)) {
+                    return false;
+                }
+                return true;
+            }
+            function timepicker7OnMinuteShowCallback(hour, minute) {
+                if ((hour == 20) && (minute >= 30)) { return false; }
+                if ((hour == 6) && (minute < 30)) { return false; }
+                return true;
+            }
+
+        </script>
+        <a onclick="$('#script_7').toggle(200)">[Show code]</a>
+<pre id="script_7" style="display: none" class="code">$('#timepicker').timepicker({
+        showPeriod: true,
+        onHourShow: OnHourShowCallback,
+        onMinuteShow: OnMinuteShowCallback
+    });
+function OnHourShowCallback(hour) {
+    if ((hour > 20) || (hour < 6)) {
+        return false; // not valid
+    }
+    return true; // valid
+}
+function OnMinuteShowCallback(hour, minute) {
+    if ((hour == 20) && (minute >= 30)) { return false; } // not valid
+    if ((hour == 6) && (minute < 30)) { return false; }   // not valid
+    return true;  // valid
+}</pre>
+    </div>
+
+   
+   
+
+    <div>
+
+        <label for="timepicker_customrange">Custom defined hours range (Business hours 6am to 7pm) and minutes increment set to 15 instead of 5, on 3 rows</label>
+        <input type="text" style="width: 70px" id="timepicker_customrange" value="13:30">
+        <script type="text/javascript">
+            $(document).ready(function() {
+               $('#timepicker_customrange').timepicker({
+                   hours: { starts: 9, ends: 17 },
+                   minutes: { interval: 60 },
+                   rows: 3,
+                   showPeriodLabels: true,
+                   minuteText: 'Min'
+               })
+            });
+
+        </script>
+
+        <a onclick="$('#script_2').toggle(200)">[Show code]</a>
+<pre id="script_2" style="display: none" class="code"> $('#timepicke').timepicker({
+   hours: { starts: 6, ends: 19 },
+   minutes: { interval: 15 },
+   rows: 3
+   showPeriodLabels: true,
+   minuteText: 'Min'
+});
+</pre>
+    </div>
+-->
+
+
+    <!-- Navigation 
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+             Brand and toggle get grouped for better mobile display
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+            </div>
+            Collect the nav links, forms, and other content for toggling 
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="login.html">About</a>
+                    </li>
+                    <li>
+                        <a href="login.html">About</a>
+                    </li>
+                    <li>
+                        <a href="login.html">About</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            </.navbar-collapse -->
+
+              <!--
+  <div class="form-group">
+    <label for="exampleTextarea">Enter Message</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+  </div>
+  <fieldset class="form-group">
+    <legend>Radio buttons</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Option one is this and that&mdash;be sure to include why it's great
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+        Option two can be something else and selecting it will deselect option one
+      </label>
+    </div>
+    <div class="form-check disabled">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+        Option three is disabled
+      </label>
+    </div>
+  </fieldset>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Check me out
+    </label>
+  </div>-->
+
