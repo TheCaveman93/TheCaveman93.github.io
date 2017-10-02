@@ -5231,6 +5231,9 @@ button.close {
   vertical-align: text-top !important;
 }
 
+.white {
+  color: #FFFFFF;
+}
 .bg-primary {
   background-color: #007bff !important;
 }
